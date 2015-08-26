@@ -1,0 +1,105 @@
+/*reset css voor alle browsers*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font-weight: normal;
+    border: 0;
+    border-radius: 0;
+    list-style: none;
+    font-style: normal;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #000;
+    /*
+    -webkit-transition: ease-in-out 0.1s;
+    -o-transition: ease-in-out 0.1s;
+    -ms-transition: ease-in-out 0.1s;
+    -moz-transition: ease-in-out 0.1s;
+    transition: ease-in-out 0.1s;
+*/
+}
+
+html,
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+header {
+    text-align: center;
+    /*    padding: 1em;*/
+    height: 3em;
+    background: rgba(239, 46, 46, 0.5);
+}
+
+header a {
+    margin: 0 1em;
+    color: #000;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    -webkit-transition: ease-in-out 0.1s;
+    -o-transition: ease-in-out 0.1s;
+    -ms-transition: ease-in-out 0.1s;
+    -moz-transition: ease-in-out 0.1s;
+    transition: ease-in-out 0.1s;
+}
+
+header a:hover {
+    color: #f4db23;
+    text-decoration: none;
+}
+
+section#container {
+    width: 100%;
+    height: calc(100vh - 3em);
+}
+
+section#container img#logoBig {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 50vw;
+    max-height: 50vh;
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+    -webkit-transition: ease-in-out 0.5s;
+    -o-transition: ease-in-out 0.5s;
+    -ms-transition: ease-in-out 0.5s;
+    -moz-transition: ease-in-out 0.5s;
+    transition: ease-in-out 0.5s;
+}
+
+ div{
+    border-radius: 50%;
+    background: rgba(52, 57, 185, 0.81);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+/*    z-index: */
+    max-width: 90vw;
+    max-height: 90vh;
+    width: auto;
+    height: auto;
+}
+
+section#container section.ballon {
+    max-width: 33vw;
+}
+
+section#container section.ballon img {
+    border-radius: 50%;
+    width: 50%;
+}
+
+section#container section.ballon h2 {
+    width: 50%;
+    padding: 0 1em;
+    display: initial;
+}

@@ -1,0 +1,13 @@
+/*mobiele css*/
+
+@media (max-width: 700px) {
+    section#container img#logoBig {
+        top: 3em;
+        left: 3em;
+        width: 5em;
+    }
+    
+    header {
+        text-align: right;
+    }
+}
