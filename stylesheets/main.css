@@ -25,6 +25,7 @@ html,
 body {
     height: 100vh;
     width: 100vw;
+    overflow: hidden;
 }
 
 header {
@@ -55,6 +56,7 @@ header a:hover {
 
 section#container {
     width: 100%;
+    background-color: #f3f5b6;
     height: calc(100vh - 3em);
 }
 
@@ -75,18 +77,16 @@ section#container img#logoBig {
     transition: ease-in-out 0.5s;
 }
 
- div{
+ div#achtergrondBol{
     border-radius: 50%;
-    background: rgba(52, 57, 185, 0.81);
+    background: rgb(255, 0, 0);
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
-/*    z-index: */
-    max-width: 90vw;
-    max-height: 90vh;
-    width: auto;
-    height: auto;
+    z-index: -1;
+    width: 110vh;
+    height: 110vh;
 }
 
 section#container section.ballon {

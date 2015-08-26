@@ -6,7 +6,12 @@
         left: 3em;
         width: 5em;
     }
-    
+    div#achtergrondBol{
+        top: 3em;
+        left: 3em;
+        width: 6em;
+        height: 6em;
+    }
     header {
         text-align: right;
     }
