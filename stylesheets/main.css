@@ -40,13 +40,28 @@ header a {
     color: #000;
     position: relative;
     top: 50%;
+    height: 50%;
     transform: translateY(-50%);
+    display: inline-block;
     text-align: center;
+    padding: 1em;
+    border-radius: 20px;
+    background-color: blue;
     -webkit-transition: ease-in-out 0.1s;
     -o-transition: ease-in-out 0.1s;
     -ms-transition: ease-in-out 0.1s;
     -moz-transition: ease-in-out 0.1s;
     transition: ease-in-out 0.1s;
+}
+header a p{
+    top: 50%;
+    display: block;
+    position: relative;
+    transform: translateY(-50%);
+    margin: 0;
+/*    padding: 1em;*/
+    color: white;
+
 }
 
 header a:hover {
