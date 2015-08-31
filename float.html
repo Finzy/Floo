@@ -9,7 +9,7 @@
 	border-radius: 50%;
 	background: #000;
     float: left;
-    -webkit-animation-name: Floatingx;
+    -webkit-animation-name: Floating;
     -webkit-animation-duration: 3s;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: ease-in-out;
@@ -22,7 +22,7 @@
 
 }
 
-@-webkit-keyframes Floatingx{
+@-webkit-keyframes Floating{
     0% {-webkit-transform:translate(0, 0px);}
     25% {-webkit-transform:translate(20px, 0);}
     50% {-webkit-transform:translate(0, 20px);}
@@ -35,7 +35,7 @@
     25% {-moz-transform:translate(20px, 0px);}
     50% {-moz-transform:translate(0px, 20px);}
 	75% {-moz-transform:translate(20px, 20px);}
-    100% {-moz-transform: translate(0px, 0px);    
+    100% {-moz-transform: translate(0px, 0px); }   
 }
 
 .floating2{
@@ -48,7 +48,7 @@
     -webkit-animation-duration: 3s;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: ease-in-out;
-    -moz-animation-name: Floating;
+    -moz-animation-name: Floatingsx;
     -moz-animation-duration: 3s;
     -moz-animation-iteration-count: infinite;
     -moz-animation-timing-function: ease-in-out;
@@ -59,17 +59,17 @@
 
 @-webkit-keyframes Floatingsx{
     0% {-webkit-transform:translate(0, 0px);}
-    25% {-webkit-transform:translate(20px, 0);}
-    50% {-webkit-transform:translate(0, 20px);}
-    75% {-webkit-transform:translate(20, 20px);}
+    25% {-webkit-transform:translate(0px, 20px);}
+    50% {-webkit-transform:translate(20px, 20px);}
+    75% {-webkit-transform:translate(20px, 0px);}
     100% {-webkit-transform: translate(0, -0px);    }    
 }
     
 @-moz-keyframes Floatingsx{
     0% {-moz-transform:translate(0, 0px);}
-    25% {-moz-transform:translate(20px, 0px);}
-    50% {-moz-transform:translate(0px, 20px);}
-	75% {-moz-transform:translate(20px, 20px);}
-    100% {-moz-transform: translate(0px, 0px);    
+    25% {-moz-transform:translate(0px, 20px);}
+    50% {-moz-transform:translate(20px, 20px);}
+	75% {-moz-transform:translate(20px, 0px);}
+    100% {-moz-transform: translate(0px, 0px);}
 }
 </style>
