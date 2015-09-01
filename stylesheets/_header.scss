@@ -1,0 +1,67 @@
+//header scss
+header {
+    display: flex;
+    justify-content: center;
+    /*    padding: 1em;*/
+    height: 4em;
+    /*    background: rgba(239, 46, 46, 0.5);*/
+}
+
+header a {
+    margin: 0 1em;
+    color: #000;
+    position: relative;
+    top: calc(50% - 5px);
+    height: 50%;
+    font-size: 90%;
+    transform: translateY(-50%);
+    display: inline-block;
+    text-align: center;
+    padding: 1em;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    /*
+    -webkit-transition: ease-in-out 0.5s;
+    -o-transition: ease-in-out 0.5s;
+    -ms-transition: ease-in-out 0.5s;
+    -moz-transition: ease-in-out 0.5s;
+*/
+    transition: all ease 0.2s;
+    box-shadow: 0px 5px #d3b899;
+    position: relative;
+    background-color: #fcd3a3;
+}
+
+header a p {
+    top: 50%;
+    display: block;
+    position: relative;
+    transform: translateY(-50%);
+    margin: 0;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+
+header a:hover {
+    background-color: #808fff;
+    box-shadow: 0px 5px #b9bcfa;
+    text-decoration: none;
+}
+
+header a:active {
+    box-shadow: 0px 0px #b9bcfa;
+    margin-top: 5px;
+    text-decoration: none;
+}
+header a:focus{
+    outline: none;
+}
+section#container {
+    width: 100%;
+    height: calc(100vh - 3em);
+    z-index: 2;
+    position: relative;
+    background: #eaecff;
+}

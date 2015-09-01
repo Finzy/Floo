@@ -1,0 +1,46 @@
+//index scss
+section#container img#logoBig {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 50vw;
+    max-height: 50vh;
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+    -webkit-transition: ease-in-out 0.5s;
+    -o-transition: ease-in-out 0.5s;
+    -ms-transition: ease-in-out 0.5s;
+    -moz-transition: ease-in-out 0.5s;
+    transition: ease-in-out 0.5s;
+    -webkit-animation-name: logoBigTiny;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes logoBigTiny{
+    0%, 100% {
+        max-height: 55vh;
+        max-width: 55vw;
+    }
+    50% {
+        max-height: 50vh;
+        max-width: 50vw;
+    }
+}
+section#container section.ballon {
+    max-width: 33vw;
+}
+
+section#container section.ballon img {
+    border-radius: 50%;
+    width: 50%;
+}
+
+section#container section.ballon h2 {
+    width: 50%;
+    padding: 0 1em;
+    display: initial;
+}
