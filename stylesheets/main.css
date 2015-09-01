@@ -192,7 +192,14 @@ section#container section.ballon h2 {
     padding: 0 1em;
     display: initial;
 }
+<<<<<<< HEAD
 \ No newline at end of file
+=======
+
+
+
+/*about styling*/
+>>>>>>> 25e53699724d374d77b9dc40d5b1d275e3302cf1
 
 .floating{
     -webkit-animation-name: Floating;
@@ -339,4 +346,12 @@ section#container section.ballon h2 {
     float: left;
     margin: -50px 250px;
 
+<<<<<<< HEAD
 }
+=======
+}
+
+.con_left{z-index:200; position: absolute; top:50px; left:0px; width:100%; height:100%; background: #eaecff; }
+.con_mid{z-index:200; position: absolute; top:0px; left:2000px; }
+.con_right{z-index:200; position: absolute; top:0px; left:2000px; }
+>>>>>>> 25e53699724d374d77b9dc40d5b1d275e3302cf1
