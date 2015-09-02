@@ -1,41 +1,64 @@
 //mobiel scss
 @media (max-width: 700px) {
-    section#container{ 
-        div#bolletjesSlikker{
+    section#container {
+        div#bolletjesSlikker {
             width: 100vh;
             height: 100vh;
         }
-        img#logoBig {
-            top: 3em;
-            left: 3em;
-            width: 5em;
-        }
     }
-    div#achtergrondBol{
-        top: 3em;
-        left: 3em;
-        width: 6em;
-        height: 6em;
+    div#achtergrondBol {
+        display: none;
     }
     header {
         justify-content: flex-end;
+        a {
+            margin: 1%;
+            //            font-size: 0.5em;
+            //            transform: scale(0.8);
+        }
     }
-    
-    form{
+    form {
         width: 100vw;
-        
         input[name="email"],
-        input[name="name"]{
+        input[name="name"] {
             width: 80%;
-        
         }
         input[name="email"],
         input[name="name"],
         textarea {
             margin: 0 1em;
         }
-        textarea{
+        textarea {
             width: calc(100% - 2em) !important;
         }
+    }
+    .about {
+        .about_area {
+            min-width: 0!important;
+            margin-top: 20%!important;
+        }
+        div {
+            margin: 0;
+            padding: 0;
+            left: 0;
+            display: block!important;
+            float: none!important;
+            width: 100%!important;
+            text-align: center;
+            h2 {
+                width: 100%;
+                float: none;
+                text-align: center;
+            }
+            p {
+                width: 100%;
+                float: none;
+            }
+        }
+    }
+    .floating,
+    .floating2,
+    .floating3 {
+        animation: none;
     }
 }

@@ -1,45 +1,59 @@
 //wieZijnWij .scss
-
-.about{
-    padding-top: 20px;
+.about {
+    padding-top: 5%;
     margin: 0 auto;
 }
 
-.about_area{
-    width:500px;
-
+.about_area {
+    width: 20vw;
+    min-width: 500px;
+    
+    div {
+        width: 50%;
+        height: auto;
+        display: inline-block;
+        float: right;
+        padding: 0 0 0 1em;
+    }
 }
-.about_area img{
-    width:200px;
+
+.about_area img {
+    width: 50%;
+    height: auto;
     border-radius: 50%;
 }
-.about_area h2{
+
+.about_area h2 {
     float: right;
-    font-size: 40px;
-}
-.about_area p{
-    margin-top: -130px;
-    margin-left: 50px;
-    float: right;
-    width: 250px;
+    height: auto;
+    display: inline-block;
+    width: 200%;
+    vertical-align: text-top;
+    text-align: right;
+    font-size: 2em;
 }
 
-.perry{
+.about_area p {
+    width: 100%;
+    padding: 1em;
+    display: inline-block;
+    float: right;
+}
+
+.perry {
     position: relative;
-    left: 100px;
+    left: 10%;
     float: left;
 }
-
-.rico{
-    margin: 100px 250px;
+.mark {
+    margin-left: 30%;
     float: left;
 }
-.mark{
-    margin-left: 400px;
+.noeel {
     float: left;
+    margin: 10%;
 }
-
-.noeel{
+.rico {
+    margin-left: 5%;
     float: left;
-    margin: -50px 250px;
 }

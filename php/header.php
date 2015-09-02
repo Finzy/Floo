@@ -12,10 +12,13 @@
 </head>
 
 <body>
-    <div id="clickBolContainer"></div>
-   <div id="achtergrondBol"></div>
+    <div class="bolContainer">
+        <div id="clickBolContainer"></div>
+        <div id="achtergrondBol"></div>       
+    </div>
     <header>
         <a class="nav_contact" href="?u=contact">Contact</a>
         <a class="nav_portfolio" href="?u=portfolio">Portfolio</a>
         <a class="nav_about" href="?u=about">Wie zijn wij</a>
+        <img src="media/img/floooWeb300px.gif" alt="flooo">
     </header>

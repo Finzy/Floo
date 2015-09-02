@@ -31,6 +31,16 @@ header {
 header a{
         transform: translateY(-50%);
 }
+header img{
+    position: absolute;
+    float: left;
+    top: 1em;
+    height: 7em;
+    width: 7em;
+    left: 2em;
+    z-index: 10;
+    
+}
 header a, .button {
     margin: 0 1em;
     color: #000;
@@ -92,7 +102,7 @@ header a:focus,
 }
 section#container {
     width: 100%;
-    height: calc(100vh - 3em);
+    height: calc(100vh - 4em);
     z-index: 2;
     position: relative;
     background: lighten($bolK, 10%);

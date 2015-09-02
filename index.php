@@ -1,8 +1,15 @@
-    <?php include 'php/header.php' ?>
+<?php include 'php/header.php' ?>
 
-	<section id='container'>
-
-<?php
+    <section id='container'>
+        <div class="bolContainer">
+            <div id="bolletjesSlikker">
+                <div class="bol"></div>
+                <div class="bol"></div>
+                <div class="bol"></div>
+                <div class="bol"></div>
+            </div>
+        </div>
+        <?php
 $url = $_GET['u'];
 $currentPageId = 0;
 	if ($url == 'contact'){
@@ -16,6 +23,6 @@ $currentPageId = 0;
 	}
 ?>
 
-	</section>
-<!--moeten deze dingen niet in de container?-->
+    </section>
+    <!--moeten deze dingen niet in de container?-->
     <?php include 'php/footer.php' ?>
