@@ -28,14 +28,26 @@ section#container img#logoBig {
     }
 }
 
-section#container h2 {
-//    @extend .floating;
-    width: 50%;
-    animation: 5s infinite ease;
-    animation-name: Floating, rainBow;
-    font-size: 3em;
-    font-family: $headF;
-    font-weight: bold;
-    padding: 0 1em;
-    display: initial;
+section#container{ 
+    
+    
+     h2 {
+    //    @extend .floating;
+        width: 50%;
+        animation: 5s infinite ease;
+        animation-name: Floating, rainBow;
+        font-size: 3em;
+        font-family: $headF;
+        font-weight: bold;
+        padding: 0 1em;
+        display: initial;
+    }
+    div.bol{
+        width: 50vw;
+        height: 50vw;
+//        background-color: $bolColor;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
