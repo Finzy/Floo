@@ -3,7 +3,7 @@
 
 <head>
     <title>Floo</title>
-    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/css/style.css">
 </head>
 
 <body>
