@@ -81,23 +81,30 @@ div#achtergrondBol {
 .con_left {
     z-index: 200;
     position: absolute;
-    top: 50px;
+    top: 60px;
     left: 2000px;
-    width: 100%;
-    height: 100%;
     background: #eaecff;
+    display: none;
+}
+
+.middle{
+    position: absolute;
+    left:0px;
+    z-index: 99999;
 }
 
 .con_mid {
     z-index: 200;
     position: absolute;
-    top: 0px;
-    left: 2000px;
+    top: 60px;
+    left: 0px;
+    display: none;
 }
 
 .con_right {
     z-index: 200;
     position: absolute;
-    top: 0px;
+    top: 60px;
     left: 2000px;
+    display: none;
 }

@@ -1,1 +1,36 @@
 //contact scss
+
+.contact{
+	width:100%;
+	height:100%;
+	background: #eaecff;
+}
+
+.form_container{
+	width:100%;
+	margin: 0 auto;
+	text-align: center;	
+
+	h1{
+		font-size:40px;
+		padding: 30px;
+	}
+
+	p{
+		font-size: 24px;
+	}
+
+	input{
+		padding-left: 10px;
+		margin: 10px;
+		border-radius: 20px;
+		height:2.5em;
+		width:30em;
+	}
+	textarea{
+		padding:5px; 
+		margin: 10px;
+		width:30em;
+	}
+	
+}
