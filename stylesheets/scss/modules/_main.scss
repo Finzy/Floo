@@ -30,6 +30,12 @@ div#achtergrondBol {
     -moz-animation-duration: 7s;
     -moz-animation-iteration-count: infinite;
     -moz-animation-timing-function: ease-in-out;
+    animation-name: Floating;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation: Floating 7s infinite ease-in-out;
+    -ms-animation: Floating 7s infinite ease-in-out;
 }
 
 .floating2 {

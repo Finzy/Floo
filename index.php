@@ -1,6 +1,6 @@
     <?php include 'php/header.php' ?>
 <section id="container">
-    <?php include 'php/index.php' ?>
+    <?php include 'php/home.php' ?>
 </section>
 
 <!--moeten deze dingen niet in de container?-->

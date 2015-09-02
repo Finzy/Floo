@@ -14,13 +14,10 @@ section#container img#logoBig {
     -ms-transition: ease-in-out 0.5s;
     -moz-transition: ease-in-out 0.5s;
     transition: ease-in-out 0.5s;
-    -webkit-animation-name: logoBigTiny;
-    -webkit-animation-duration: 5s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: ease-in-out;
+    animation: logoBigTiny 5s infinite ease-in-out;
 }
 
-@-webkit-keyframes logoBigTiny{
+@keyframes logoBigTiny{
     0%, 100% {
         max-height: 55vh;
         max-width: 55vw;
@@ -30,17 +27,15 @@ section#container img#logoBig {
         max-width: 50vw;
     }
 }
-section#container section.ballon {
-    max-width: 33vw;
-}
 
-section#container section.ballon img {
-    border-radius: 50%;
+section#container h2 {
+//    @extend .floating;
     width: 50%;
-}
-
-section#container section.ballon h2 {
-    width: 50%;
+    animation: 5s infinite ease;
+    animation-name: Floating, rainBow;
+    font-size: 3em;
+    font-family: $headF;
+    font-weight: bold;
     padding: 0 1em;
     display: initial;
 }
