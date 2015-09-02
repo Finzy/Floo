@@ -1,9 +1,15 @@
 //mobiel scss
 @media (max-width: 700px) {
-    section#container img#logoBig {
-        top: 3em;
-        left: 3em;
-        width: 5em;
+    section#container{ 
+        div#bolletjesSlikker{
+            width: 100vh;
+            height: 100vh;
+        }
+        img#logoBig {
+            top: 3em;
+            left: 3em;
+            width: 5em;
+        }
     }
     div#achtergrondBol{
         top: 3em;

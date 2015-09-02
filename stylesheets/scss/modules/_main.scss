@@ -9,17 +9,7 @@ body {
     z-index: -1;
 }
 
-div#achtergrondBol {
-    border-radius: 50%;
-    background: rgb(255, 255, 255);
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    /*    z-index: -1;*/
-    width: 110vh;
-    height: 110vh;
-}
+
 
 .floating {
     -webkit-animation-name: Floating;
@@ -87,9 +77,9 @@ div#achtergrondBol {
     display: none;
 }
 
-.middle{
+.middle {
     position: absolute;
-    left:0px;
+    left: 0px;
     z-index: 99999;
 }
 

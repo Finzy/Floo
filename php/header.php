@@ -11,9 +11,9 @@
 </head>
 
 <body>
+    <div id="clickBolContainer"></div>
    <div id="achtergrondBol"></div>
     <header>
-       
         <a class="nav_contact" href="#"><p>Contact</p></a>
         <a class="nav_portfolio" href="#"><p>Portfolio</p></a>
         <a class="nav_about" href="#"><p>Wie zijn wij</p></a>

@@ -1,10 +1,32 @@
-//ozin scss
+//header scss
+
+div#achtergrondBol {
+    border-radius: 50%;
+    background: $bolK;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    /*    z-index: -1;*/
+    width: 110vh;
+    height: 110vh;
+}
+.bolClick{
+    @extend div#achtergrondBol;
+    width: 100vh;
+    height: 100vh;
+    background: none;
+    border: 3em solid $bolK;
+    animation: clickIt 1s;
+    z-index: -1;
+}
 header {
     display: flex;
     justify-content: center;
     /*    padding: 1em;*/
     height: 4em;
     /*    background: rgba(239, 46, 46, 0.5);*/
+    box-shadow: 10px 10px 5px #000;
 }
 
 header a {
@@ -63,5 +85,5 @@ section#container {
     height: calc(100vh - 3em);
     z-index: 2;
     position: relative;
-    background: #eaecff;
+    background: lighten($bolK, 10%);
 }
