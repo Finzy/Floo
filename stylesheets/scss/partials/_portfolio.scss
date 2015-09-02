@@ -5,3 +5,80 @@
 	height:100%;
 	background: #eaecff;
 }
+.infoContainer {
+	width: 500px;
+	margin-left: 40px;
+	margin-top: 40px;
+	background-color: blue;
+	display: none;
+	overflow: hidden;
+}
+.infoTitle {
+	margin-left: 4em;
+	padding: 0.3em;
+}
+.headerImg:hover .infoContainer {
+	-moz-animation-name: grow;
+	-moz-animation-duration: 3s;
+}
+.headerImg {
+	width: 100px;
+	position: absolute;
+	z-index: 5;
+	border-radius: 50%;
+}
+.circle {
+	position: absolute;
+	width: 120px;
+	height: 120px;
+	margin-left: -50px;
+	margin-top: -50px;
+	background-color: white;
+	border-radius: 50%;
+}
+.projectContainer {
+	position: relative;
+	width: 50%;
+	height: 50%;
+	float: left;
+}
+
+.ani1 {
+    -moz-animation-name: show;
+    -moz-animation-duration: 3s;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: ease;
+    -moz-animation-fill-mode: forwards;
+}
+.ani2 {
+	-moz-animation-name: hide;
+    -moz-animation-duration: 3s;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: ease;
+    -moz-animation-fill-mode: forwards;
+
+}
+
+@-moz-keyframes show {
+    from {
+    	width: 0px; 
+    	height: 0px;
+	}
+    to {
+    	display: block;
+    	width: 500px;
+    	height: 430px;
+
+	}
+}
+@-moz-keyframes hide {
+    from {
+    	width: 500px; 
+    	height: 430px;
+	}
+    to {
+    	width: 0px;
+    	height: 0px;  
+	}
+}
+

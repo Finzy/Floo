@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="stylesheets/css/style.css">
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/portfolio.js"></script>
 
 </head>
 
