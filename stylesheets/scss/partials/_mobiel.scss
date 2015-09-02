@@ -18,6 +18,24 @@
         height: 6em;
     }
     header {
-        text-align: right;
+        justify-content: flex-end;
+    }
+    
+    form{
+        width: 100vw;
+        
+        input[name="email"],
+        input[name="name"]{
+            width: 80%;
+        
+        }
+        input[name="email"],
+        input[name="name"],
+        textarea {
+            margin: 0 1em;
+        }
+        textarea{
+            width: calc(100% - 2em) !important;
+        }
     }
 }
