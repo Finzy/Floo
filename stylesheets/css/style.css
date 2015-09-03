@@ -175,7 +175,9 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   /*    background-color: #e8e8e8;*/
   z-index: -1;
-  background: #EAECFF; }
+  background: #EAECFF;
+  overflow-x: hidden;
+  overflow-y: visible; }
 
 div.bolContainer {
   overflow: hidden;
@@ -499,13 +501,13 @@ section#container img#logoBig {
   animation: logoBigTiny 5s infinite ease-in-out; }
 
 section#container .keywords h2 {
-  width: 50%;
+  width: auto;
   font-size: 3em;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   display: initial; }
 section#container .keywords {
-  width: 100%;
+  width: auto;
   padding: 20px 0px;
   font-size: 0.8em; }
   section#container .keywords h2:nth-child(1) {
@@ -514,6 +516,8 @@ section#container .keywords {
     display: block;
     text-align: center; }
   section#container .keywords h2 {
+    display: inline-block;
+    width: auto;
     padding: 10px;
     color: #fff !important; }
   section#container .keywords h2:nth-child(2) {
