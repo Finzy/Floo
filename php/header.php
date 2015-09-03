@@ -18,7 +18,12 @@
     </div>
     <header>
         <a class="nav_contact" href="?u=contact">Contact</a>
-        <a class="nav_portfolio" href="?u=portfolio">Portfolio</a>
+<!--        <a class="nav_portfolio" href="?u=portfolio">Portfolio</a>-->
         <a class="nav_about" href="?u=about">Wie zijn wij</a>
-        <img src="media/img/floooWeb300px.gif" alt="flooo">
+        
+        <div>
+           <a href="?u=index">
+            <img src="media/img/floooWeb300px.gif" alt="flooo">
+            </a>
+        </div>
     </header>

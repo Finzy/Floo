@@ -7,5 +7,5 @@ $(document).ready(function() {
 
 //voor het ring click effect
 $('a').click(function(){
-    $("#clickBolContainer").append("<div class='bolClick'></div>")
+    $("#clickBolContainer").append("<div class='bolClick'></div>");
 });

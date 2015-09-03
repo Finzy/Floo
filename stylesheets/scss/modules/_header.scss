@@ -19,6 +19,7 @@ div#achtergrondBol {
     border: 3em solid $bolK;
     animation: clickIt 1s;
     z-index: -1;
+//    display: none;
 }
 header {
     display: flex;
@@ -28,20 +29,38 @@ header {
     /*    background: rgba(239, 46, 46, 0.5);*/
     box-shadow: 10px 10px 5px #000;
 }
-header a{
+header>a{
         transform: translateY(-50%);
 }
-header img{
+header div{
     position: absolute;
     float: left;
-    top: 1em;
+    top:0.5em;
     height: 7em;
     width: 7em;
     left: 2em;
     z-index: 10;
+//    background-color: $bolK;
+    background-image: -webkit-linear-gradient(bottom, lighten($bolK, 8%) 50%, $bolK 50%);
+    border-radius: 50%;
+    
+    a{
+        width: 90%;
+        height: 90%;
+        margin: 0 auto;
+        display: block;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
     
 }
-header a, .button {
+header>a, .button {
     margin: 0 1em;
     color: #000;
     position: relative;
@@ -83,20 +102,20 @@ header a, .button {
 //
 //}
 
-header a:hover,
+header>a:hover,
 .button:hover {
     background-color: #808fff;
     box-shadow: 0px 5px #b9bcfa;
     text-decoration: none;
 }
 
-header a:active,
+header>a:active,
 .button:active {
     box-shadow: 0px 0px #b9bcfa;
     margin-top: 5px;
     text-decoration: none;
 }
-header a:focus,
+header>a:focus,
 .button:focus{
     outline: none;
 }
