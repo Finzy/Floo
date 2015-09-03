@@ -1,7 +1,7 @@
 //mobiel scss
 @media (max-width: 700px) {
-    section#container{ 
-        div#bolletjesSlikker{
+    section#container {
+        div#bolletjesSlikker {
             width: 100vh;
             height: 100vh;
         }
@@ -9,6 +9,7 @@
             top: -1em;
             left: 3em;
             width: 5em;
+            z-index: 999;
         }
     }
     div#achtergrondBol{
@@ -17,8 +18,103 @@
         width: 6em;
         height: 6em;
         z-index: -10;
+        display: none;
     }
     header {
-        text-align: right;
+        justify-content: flex-end;
+        a {
+            margin: 1%;
+            //            font-size: 0.5em;
+            //            transform: scale(0.8);
+        }
+    }
+    form {
+        width: 100vw;
+        input[name="email"],
+        input[name="name"] {
+            width: 80%;
+        }
+        input[name="email"],
+        input[name="name"],
+        textarea {
+            margin: 0 1em;
+        }
+        textarea {
+            width: calc(100% - 2em) !important;
+        }
+    }
+    .about {
+        .about_area {
+            min-width: 0!important;
+            margin-top: 20%!important;
+        }
+        div {
+            margin: 0;
+            padding: 0;
+            left: 0;
+            display: block!important;
+            float: none!important;
+            width: 100%!important;
+            text-align: center;
+            h2 {
+                width: 100%;
+                float: none;
+                text-align: center;
+            }
+            p {
+                width: 100%;
+                float: none;
+            }
+        }
+    }
+
+
+    .floating,
+    .floating2,
+    .floating3 {
+        animation: none;
+    }
+}
+
+@media (min-width: 700px){
+    .keywords{
+        h2:nth-child(1){
+            position:absolute;
+            left: 0px;
+        }
+        h2:nth-child(2){
+            position:absolute;
+            left: -300px;
+        }
+        h2:nth-child(3){
+            position:absolute;
+            left: 300px;
+        }
+        h2:nth-child(4){
+            position:absolute;
+            left: -400px;
+        }
+        h2:nth-child(5){
+            position:absolute;
+            left: 400px;
+        }
+        h2:nth-child(6){
+            position:absolute;
+            left: -350px;
+        }
+        h2:nth-child(7){
+            position:absolute;
+            left: 350px;
+        }
+        h2:nth-child(8){
+            position:absolute;
+            left: -400px;
+        }
+        h2:nth-child(9){
+            position:absolute;
+            left: 200px;
+            top: 100px
+        }
+
     }
 }

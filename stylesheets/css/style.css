@@ -89,13 +89,24 @@ header {
   box-shadow: 10px 10px 5px #000; }
 
 header a {
+  transform: translateY(-50%); }
+
+header img {
+  position: absolute;
+  float: left;
+  top: 1em;
+  height: 7em;
+  width: 7em;
+  left: 2em;
+  z-index: 10; }
+
+header a, .button, form input#submit {
   margin: 0 1em;
   color: #000;
   position: relative;
   top: calc(50% - 5px);
   height: 50%;
   font-size: 90%;
-  transform: translateY(-50%);
   display: inline-block;
   text-align: center;
   padding: 1em;
@@ -110,46 +121,89 @@ header a {
   transition: all ease 0.2s;
   box-shadow: 0px 5px #d3b899;
   position: relative;
-  background-color: #fcd3a3; }
-
-header a p {
-  top: 50%;
-  display: block;
-  position: relative;
-  transform: translateY(-50%);
-  margin: 0;
+  background-color: #fcd3a3;
   color: white;
-  text-decoration: none;
-  font-weight: 600; }
+  font-weight: 600;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 50%;
+  cursor: pointer; }
 
-header a:hover {
+header a:hover,
+.button:hover,
+form input#submit:hover {
   background-color: #808fff;
   box-shadow: 0px 5px #b9bcfa;
   text-decoration: none; }
 
-header a:active {
+header a:active,
+.button:active,
+form input#submit:active {
   box-shadow: 0px 0px #b9bcfa;
   margin-top: 5px;
   text-decoration: none; }
 
-header a:focus {
+header a:focus,
+.button:focus,
+form input#submit:focus {
   outline: none; }
 
 section#container {
   width: 100%;
-  height: calc(100vh - 3em);
+  height: calc(100vh - 4em);
   z-index: 2;
   position: relative;
   background: #f7f5ff; }
 
 html,
 body {
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden;
+  height: 100%;
+  width: 100%;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   /*    background-color: #e8e8e8;*/
   z-index: -1; }
+
+div.bolContainer {
+  overflow: hidden;
+  content: " ";
+  height: 100%;
+  width: 100%;
+  position: absolute; }
+
+div#bolletjesSlikker {
+  position: absolute;
+  width: 150vh;
+  height: 150vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  div#bolletjesSlikker div.bol {
+    width: 50vw;
+    height: 50vw;
+    background-color: #ccc2ff;
+    border-radius: 50%;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    animation: 2s bolletje infinite ease-in-out; }
+  div#bolletjesSlikker div.bol:nth-child(1) {
+    background-color: #ccc2ff;
+    width: 150%;
+    height: 150%; }
+  div#bolletjesSlikker div.bol:nth-child(2) {
+    background-color: #775cff;
+    width: 90%;
+    height: 90%; }
+  div#bolletjesSlikker div.bol:nth-child(3) {
+    background-color: #2800f5;
+    width: 70%;
+    height: 70%; }
+  div#bolletjesSlikker div.bol:nth-child(4) {
+    background-color: #17008f;
+    width: 50%;
+    height: 50%; }
 
 .floating {
   -webkit-animation-name: Floating;
@@ -358,25 +412,59 @@ body {
   height: 100%;
   background: #eaecff; }
 
-.form_container {
-  width: 100%;
+form {
+  padding-top: 10%;
+  width: 80%;
   margin: 0 auto;
-  text-align: center; }
-  .form_container h1 {
-    font-size: 40px;
-    padding: 30px; }
-  .form_container p {
-    font-size: 24px; }
-  .form_container input {
-    padding-left: 10px;
-    margin: 10px;
-    border-radius: 20px;
-    height: 2.5em;
-    width: 30em; }
-  .form_container textarea {
-    padding: 5px;
-    margin: 10px;
-    width: 30em; }
+  color: white;
+  z-index: 2;
+  position: relative; }
+  form h1 {
+    font-size: 6vw;
+    padding: 0.5em;
+    color: inherit; }
+  form p {
+    font-size: 2em;
+    padding: 0.3em 0.5em 0;
+    margin-bottom: -0.2em;
+    color: white;
+    font-weight: bold;
+    width: 50%;
+    transition: ease-in-out 0.5s;
+    user-select: none;
+    cursor: default; }
+  form input[name="email"],
+  form input[name="name"] {
+    width: 50%; }
+  form div {
+    width: auto; }
+  form div.naam:hover p,
+  form div.email:hover p,
+  form div.bericht:hover p {
+    padding-left: 30%; }
+  form input[name="email"]:focus,
+  form input[name="name"]:focus,
+  form textarea:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background-color: #fff5e7; }
+  form input[name="email"],
+  form input[name="name"],
+  form textarea {
+    font-size: 1em;
+    padding: 1em;
+    border-radius: 10px;
+    height: 2.5em; }
+  form textarea[name="message"] {
+    font-family: inherit;
+    vertical-align: top;
+    height: 30vh;
+    width: 100%;
+    resize: none; }
+  form input#submit {
+    margin: 1em;
+    float: right; }
 
 section#container img#logoBig {
   position: absolute;
@@ -451,7 +539,45 @@ section#container {
       margin: 0 auto;
       display: block;
       text-align: center; }
+    section#container .keywords h2 {
+      padding: 10px;
+      color: #fff !important; }
     section#container .keywords h2:nth-child(2) {
+      position: relative;
+      margin: 0 auto;
+      display: block;
+      text-align: center; }
+    section#container .keywords h2:nth-child(3) {
+      position: relative;
+      margin: 0 auto;
+      display: block;
+      text-align: center; }
+    section#container .keywords h2:nth-child(4) {
+      position: relative;
+      margin: 0 auto;
+      display: block;
+      text-align: center; }
+    section#container .keywords h2:nth-child(5) {
+      position: relative;
+      margin: 0 auto;
+      display: block;
+      text-align: center; }
+    section#container .keywords h2:nth-child(6) {
+      position: relative;
+      margin: 0 auto;
+      display: block;
+      text-align: center; }
+    section#container .keywords h2:nth-child(7) {
+      position: relative;
+      margin: 0 auto;
+      display: block;
+      text-align: center; }
+    section#container .keywords h2:nth-child(8) {
+      position: relative;
+      margin: 0 auto;
+      display: block;
+      text-align: center; }
+    section#container .keywords h2:nth-child(9) {
       position: relative;
       margin: 0 auto;
       display: block;
@@ -464,17 +590,86 @@ section#container {
   section#container img#logoBig {
     top: -1em;
     left: 3em;
-    width: 5em; }
+    width: 5em;
+    z-index: 999; }
 
   div#achtergrondBol, .bolClick {
     top: 3em;
     left: 3em;
     width: 6em;
     height: 6em;
-    z-index: -10; }
+    z-index: -10;
+    display: none; }
 
   header {
-    text-align: right; } }
+    justify-content: flex-end; }
+    header a {
+      margin: 1%; }
+
+  form {
+    width: 100vw; }
+    form input[name="email"],
+    form input[name="name"] {
+      width: 80%; }
+    form input[name="email"],
+    form input[name="name"],
+    form textarea {
+      margin: 0 1em; }
+    form textarea {
+      width: calc(100% - 2em) !important; }
+
+  .about .about_area {
+    min-width: 0 !important;
+    margin-top: 20% !important; }
+  .about div {
+    margin: 0;
+    padding: 0;
+    left: 0;
+    display: block !important;
+    float: none !important;
+    width: 100% !important;
+    text-align: center; }
+    .about div h2 {
+      width: 100%;
+      float: none;
+      text-align: center; }
+    .about div p {
+      width: 100%;
+      float: none; }
+
+  .floating,
+  .floating2,
+  .floating3 {
+    animation: none; } }
+@media (min-width: 700px) {
+  .keywords h2:nth-child(1) {
+    position: absolute;
+    left: 0px; }
+  .keywords h2:nth-child(2) {
+    position: absolute;
+    left: -300px; }
+  .keywords h2:nth-child(3) {
+    position: absolute;
+    left: 300px; }
+  .keywords h2:nth-child(4) {
+    position: absolute;
+    left: -400px; }
+  .keywords h2:nth-child(5) {
+    position: absolute;
+    left: 400px; }
+  .keywords h2:nth-child(6) {
+    position: absolute;
+    left: -350px; }
+  .keywords h2:nth-child(7) {
+    position: absolute;
+    left: 350px; }
+  .keywords h2:nth-child(8) {
+    position: absolute;
+    left: -400px; }
+  .keywords h2:nth-child(9) {
+    position: absolute;
+    left: 200px;
+    top: 100px; } }
 .portfolio {
   width: 100%;
   height: 100%;
@@ -550,41 +745,54 @@ section#container {
   width: 100%;
   height: 100%;
   background: #eaecff;
-  padding-top: 20px;
+  padding-top: 5%;
   margin: 0 auto; }
 
 .about_area {
-  width: 500px; }
+  width: 20vw;
+  min-width: 500px; }
+  .about_area div {
+    width: 50%;
+    height: auto;
+    display: inline-block;
+    float: right;
+    padding: 0 0 0 1em; }
 
 .about_area img {
-  width: 200px;
+  width: 50%;
+  height: auto;
   border-radius: 50%; }
 
-.about_area h1 {
+.about_area h2 {
   float: right;
-  font-size: 40px; }
+  height: auto;
+  display: inline-block;
+  width: 200%;
+  vertical-align: text-top;
+  text-align: right;
+  font-size: 2em; }
 
 .about_area p {
-  margin-top: -130px;
-  margin-left: 50px;
-  float: right;
-  width: 250px; }
+  width: 100%;
+  padding: 1em;
+  display: inline-block;
+  float: right; }
 
 .perry {
   position: relative;
-  left: 100px;
-  float: left; }
-
-.rico {
-  margin: 100px 250px;
+  left: 10%;
   float: left; }
 
 .mark {
-  margin-left: 400px;
+  margin-left: 30%;
   float: left; }
 
 .noeel {
   float: left;
-  margin: -50px 250px; }
+  margin: 10%; }
+
+.rico {
+  margin-left: 5%;
+  float: left; }
 
 /*# sourceMappingURL=style.css.map */
