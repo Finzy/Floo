@@ -23,14 +23,10 @@ section#container img#logoBig {
 section#container {
     overflow: hidden;
     h2 {
-        //    @extend .floating;
         width: 50%;
-        animation: 5s infinite ease;
-        animation-name: Floating, rainBow;
         font-size: 3em;
         font-family: $headF;
         font-weight: bold;
-        padding: 0 1em;
         display: initial;
     }
     div#bolletjesSlikker {
@@ -81,6 +77,24 @@ section#container {
 //            animation-delay: 1.0s;
             width: 50%;
             height: 50%;
+        }
+    }
+    .keywords{
+        width:100%;
+        padding: 20px 0px;
+        font-size: 0.8em;
+        h2:nth-child(1){
+            position:relative;
+            margin: 0 auto;
+            display: block;
+            text-align: center;
+            
+        }
+        h2:nth-child(2){
+            position: relative;
+            margin: 0 auto;
+            display: block;
+            text-align: center;
         }
     }
 }

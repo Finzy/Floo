@@ -5,4 +5,12 @@
     <div class="bol"></div>
 </div>
 <img id="logoBig" src="media/img/floooWeb1200px.gif" alt="flooo">
-<h2>lol</h2>
+
+<div class="keywords">
+	<h2>lol</h2>
+	<h2>Placeholder</h2>
+
+</div>
+
+
+

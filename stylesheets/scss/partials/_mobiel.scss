@@ -6,7 +6,7 @@
             height: 100vh;
         }
         img#logoBig {
-            top: 3em;
+            top: -1em;
             left: 3em;
             width: 5em;
         }
@@ -16,6 +16,7 @@
         left: 3em;
         width: 6em;
         height: 6em;
+        z-index: -10;
     }
     header {
         text-align: right;
