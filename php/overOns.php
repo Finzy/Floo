@@ -4,7 +4,7 @@
         <img src="http://devimg.com/x">
         <div>
             <h2>Perry van Zetten</h2>
-            <p>Hallo, ik ben Perry van Zetten ik kom uit Amsterdam, Noord-Holland en ben 18 jaar oud, ik werk nu 3,5 jaar in een restaurant in het centrum van Amsterdam. Ik hou me vooral bezig met front & back-end development waarvan ik front-end het leukste vind om te doen. In me vrije tijd ben ik vooral bezig met brommers wat iets totaal anders is dan waar ik met op school mee bezig hou maar ik vind het leuk om meerdere dingen te leren.
+            <p>Hallo, ik ben Perry van Zetten ik kom uit Amsterdam, Noord-Holland en ben 18 jaar oud, ik werk nu 3,5 jaar in een restaurant in het centrum van Amsterdam. Ik hou me vooral bezig met front & back-end development waarvan ik front-end het leukste vind om te doen. In mijn vrije tijd ben ik vooral bezig met brommers wat iets totaal anders is dan waar ik met op school mee bezig hou maar ik vind het leuk om meerdere dingen te leren.
             </p>
         </div>
     </div>
