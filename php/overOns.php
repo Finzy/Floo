@@ -32,5 +32,6 @@
             <p>Hoi, ik ben Rico Snoek, woon in Volendam, Noord-Holland en ben 18 jaar oud. Een van mijn bezigheden op school is back-end development en in mijn vrije tijd vind ik het leuk om te gamen.</p>
         </div>
     </div>
-
+<!--    dit is een hot fix voor dat het bolletje buiten beeld wilt-->
+<div style="height:20px;"></div>
 </section>

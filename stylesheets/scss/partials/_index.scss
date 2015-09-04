@@ -22,79 +22,27 @@ section#container img#logoBig {
 
 section#container {
 //    overflow: hidden;
-    .keywords h2 {
-        width: auto;
-        font-size: 3em;
-        font-family: $headF;
-        font-weight: bold;
-        display: initial;
-    }
+
     .keywords{
         width:auto;
         padding: 20px 0px;
         font-size: 0.8em;
-        h2:nth-child(1){
+        
+        h2{
+//            @extend .floating;
+            display: inline-block;
+            width: auto;
+            padding: 1.5%;
+            color:#fff !important;
+            width: auto;
+            font-size: 3em;
+            font-family: $headF;
+            font-weight: bold;
+            display: initial;
             position:relative;
             margin: 0 auto;
             display: block;
             text-align: center;
-            
         }
-        h2{
-            display: inline-block;
-            width: auto;
-            padding: 10px;
-            color:#fff !important;
-        }
-        h2:nth-child(2){
-            position: relative;
-            margin: 0 auto;
-            display: block;
-            text-align: center;
-        }
-        h2:nth-child(3){
-            position: relative;
-            margin: 0 auto;
-            display: block;
-            text-align: center;
-        }
-        h2:nth-child(4){
-            position: relative;
-            margin: 0 auto;
-            display: block;
-            text-align: center;
-        }
-        h2:nth-child(5){
-            position: relative;
-            margin: 0 auto;
-            display: block;
-            text-align: center;
-        }
-        h2:nth-child(6){
-            position: relative;
-            margin: 0 auto;
-            display: block;
-            text-align: center;
-        }
-        h2:nth-child(7){
-            position: relative;
-            margin: 0 auto;
-            display: block;
-            text-align: center;
-        }
-        h2:nth-child(8){
-            position: relative;
-            margin: 0 auto;
-            display: block;
-            text-align: center;
-        }
-        h2:nth-child(9){
-            position: relative;
-            margin: 0 auto;
-            display: block;
-            text-align: center;
-        }
-
-
     }
 }

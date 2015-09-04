@@ -24,5 +24,5 @@ $currentPageId = 0;
 ?>
 
     </section>
-    <!--moeten deze dingen niet in de container?-->
+
     <?php include 'php/footer.php' ?>
