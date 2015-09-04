@@ -3,10 +3,13 @@ html,
 body {
     height: 100%;
     width: 100%;
-//    overflow: hidden;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     /*    background-color: #e8e8e8;*/
     z-index: -1;
+    background: #EAECFF ;
+//    overflow-x:hidden;
+//    overflow-y:visible;
+
 }
 div.bolContainer{
     overflow: hidden;
@@ -14,6 +17,8 @@ div.bolContainer{
     height: 100%;
     width: 100%;
     position: absolute;
+//    position: fixed;
+//    z-index: -1;
 }
  div#bolletjesSlikker {
         position: absolute;

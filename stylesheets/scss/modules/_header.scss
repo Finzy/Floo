@@ -7,7 +7,7 @@ div#achtergrondBol {
     top: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
-    /*    z-index: -1;*/
+    z-index: 0;
     width: 110vh;
     height: 110vh;
 }
@@ -121,8 +121,10 @@ header>a:focus,
 }
 section#container {
     width: 100%;
-    height: calc(100vh - 4em);
+    min-height: calc(100vh - 4em);
+    height: auto;
     z-index: 2;
     position: relative;
     background: lighten($bolK, 10%);
+//    overflow-x: hidden;
 }

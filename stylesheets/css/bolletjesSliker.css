@@ -4,23 +4,27 @@ header div {
     display: none;
 }
 
-div.bol {
+div#bolletjesSlikker div.bol {
     animation-iteration-count: 1!important;
     animation-name: none;
 }
 
-div.bol:nth-child(1) {
+section#container{
+    overflow-x: hidden;
+}
+
+div#bolletjesSlikker div.bol:nth-child(1) {
     animation-name: discoTime1!important;
 }
 
-div.bol:nth-child(2) {
+div#bolletjesSlikker div.bol:nth-child(2) {
     animation-name: discoTime2!important;
 }
 
-div.bol:nth-child(3) {
+div#bolletjesSlikker div.bol:nth-child(3) {
     animation-name: discoTime3!important;
 }
 
-div.bol:nth-child(4) {
+div#bolletjesSlikker div.bol:nth-child(4) {
     animation-name: discoTime4!important;
 }
