@@ -33,7 +33,7 @@ div.bolContainer{
             left: 50%;
             transform: translate(-50%, -50%);
             position: absolute;
-            animation: 2s bolletje infinite ease-in-out;
+            animation: 2s bolletje infinite ease-in-out!important;
 
         }
         div.bol:nth-child(1){

@@ -6,6 +6,7 @@ header div {
 
 div.bol {
     animation-iteration-count: 1!important;
+    animation-name: none;
 }
 
 div.bol:nth-child(1) {
