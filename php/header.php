@@ -7,8 +7,17 @@
     <link rel="icon" href="media/img/favicon.gif" type="image/x-icon" />
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="js/portfolio.js"></script>
+<!--    <script src="js/portfolio.js"></script>-->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+<!--    page transision js-->
+<link rel="stylesheet" href="stylesheets/css/animations.css">
+<link rel="stylesheet" href="stylesheets/css/component.css">
+<link rel="stylesheet" href="stylesheets/css/default.css">
+<link rel="stylesheet" href="stylesheets/css/multilevelmenu.css">
+<script src="js/jquery.dlmenu.js"></script>
+<script src="js/modernizr.custom.js"></script>
+<script src="js/pagetransitions.js"></script>
 
 </head>
 
