@@ -4,7 +4,7 @@
     <!--		<h1>Neem contact op.</h1>-->
 
     <form id="con_form" method="POST" action="php/mail.php">
-       <a href="#" class="button">wazaaa</a>
+<!--       <a href="#" class="button">wazaaa</a>-->
         <div class="naam">
             <p>Naam</p>
             <input type="text" name="name">
