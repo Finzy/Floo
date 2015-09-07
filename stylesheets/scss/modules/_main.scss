@@ -9,7 +9,28 @@ body {
     background: #EAECFF ;
 //    overflow-x:hidden;
 //    overflow-y:visible;
+//    overflow: auto;
 
+}
+
+section#container{
+    width: 100%;
+    min-height: calc(100vh - 4em);
+    height: auto;
+    z-index: 2;
+    position: relative;
+    background: lighten($bolK, 10%);
+//    overflow-x: hidden;
+
+    .page{
+        min-height: calc(100vh - 4em)!important;
+        top: 100%;
+        position: fixed;
+        width: 100%;
+    }
+    #index{
+        top:0;
+    }
 }
 div.bolContainer{
     overflow: hidden;
@@ -50,21 +71,21 @@ div.bolContainer{
         }
         div.bol:nth-child(2){
 //            animation-name: discoTime2;
-            background-color: darken($bolK, 20%);
+            background-color: lighten($bolK, 1%);
 //            animation-delay: 0.4s;
             width: 90%;
             height: 90%;
         }
         div.bol:nth-child(3){
 //            animation-name: discoTime3;
-            background-color: darken($bolK, 40%);
+            background-color: lighten($bolK, 2%);
 //            animation-delay: 0.2s;
             width: 70%;
             height: 70%;
         }
         div.bol:nth-child(4){
 //            animation-name: discoTime4;
-            background-color: darken($bolK, 60%);
+            background-color: lighten($bolK, 3%);
 //            animation-delay: 1.0s;
             width: 50%;
             height: 50%;

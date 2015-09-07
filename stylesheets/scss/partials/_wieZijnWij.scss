@@ -1,65 +1,87 @@
 //wieZijnWij .scss
-
-.about{
-    width:100%;
-    height:100%;
-//    background: #eaecff;
+.about {
+    width: 100%;
+    height: 100%;
+    //    background: #eaecff;
     padding-top: 5%;
     margin: 0 auto;
     position: relative;
     z-index: 1;
-}
-
-.about_area {
-    width: 20vw;
-    min-width: 500px;
-    
-    div {
-        width: 50%;
-        height: auto;
-        display: inline-block;
-        float: right;
-        padding: 0 0 0 1em;
+    #flooo {
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+        max-width: 40vw;
+        width: auto;
+        img {
+            display: none;
+        }
+        >div>h2 {
+            font-size: 2.5em;
+            letter-spacing: 1em;
+        }
     }
-}
-
-.about_area img {
-    width: 50%;
-    height: auto;
-    border-radius: 50%;
-}
-
-.about_area h2 {
-    float: right;
-    height: auto;
-    display: inline-block;
-    width: 200%;
-    vertical-align: text-top;
-    text-align: right;
-    font-size: 2em;
-}
-
-.about_area p {
-    width: 100%;
-    padding: 1em;
-    display: inline-block;
-    float: right;
-}
-
-.perry {
-    position: relative;
-    left: 10%;
-//    float: left;
-}
-.mark {
-    margin-left: 30%;
-//    float: left;
-}
-.noeel {
-//    float: left;
-    margin: 10%;
-}
-.rico {
-    margin-left: 5%;
-//    float: left;
+    .about_area {
+        width: 10vw;
+        min-width: 350px;
+        >div {
+            //            width: 75%;
+            height: auto;
+            //            display: inline-block;
+            //            float: right;
+            //            padding: 0 0 0 1em;
+            div {
+                background-color: lighten($bolK, 5%);
+                border-radius: 15px;
+                h2 {
+                    margin: 0.5em 2em 0.5em 0;
+                    font-size: 1em;
+                    font-weight: normal;
+                }
+            }
+            img {
+                width: 29%;
+                height: auto;
+                border-radius: 50%;
+                position: relative;
+                top: 70px;
+                border: lighten($bolK, 8%) 5px solid;
+            }
+            h2 {
+                //                float: right;
+                height: auto;
+                display: inline-block;
+                width: 100%;
+                vertical-align: text-top;
+                text-align: right;
+                font-size: 2em;
+                color: $priK;
+                letter-spacing: 0.5em;
+                font-weight: 600;
+            }
+            p {
+                width: 100%;
+                padding: 1em;
+                display: inline-block;
+                //                float: right;
+            }
+        }
+    }
+    .perry {
+        position: relative;
+        left: 10%;
+        //    float: left;
+    }
+    .mark {
+        margin-left: 30%;
+        //    float: left;
+    }
+    .noeel {
+        //    float: left;
+        margin: 10%;
+    }
+    .rico {
+        margin-left: 5%;
+        //    float: left;
+    }
 }

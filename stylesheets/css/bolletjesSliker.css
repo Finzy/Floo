@@ -1,7 +1,7 @@
 /*bolletjesSlikken*/
 
 header div {
-    display: block;
+    display: none;
 }
 
 div#bolletjesSlikker div.bol {
