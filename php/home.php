@@ -14,7 +14,7 @@
 <div class="keywords">
    <span>
         <h2>Animaties</h2>
-        <p>Net zoals onze website kunnen wij uw website interactief maken. Dit is ook onze specialiteid. En daar zijn we ook erg goed in
+        <p>Net zoals onze website kunnen wij uw website interactief maken. Dit is ook onze specialiteit. En daar zijn we ook erg goed in
 </p>
     </span>
     <span>
