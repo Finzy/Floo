@@ -28,7 +28,7 @@ Het idee van Flooo is dat wij veel interactie gebruiken op de websites. Dit maak
 
     <div class="floating2 about_area mark">
         <div>
-            <img src="media/img/noeel.jpg">
+            <img src="http://devimg.com/x">
 
             <h2>Mark</h2>
             <div>
@@ -40,7 +40,7 @@ Het idee van Flooo is dat wij veel interactie gebruiken op de websites. Dit maak
 
     <div class="floating3 about_area noeel">
         <div>
-            <img src="http://devimg.com/x">
+            <img src="media/img/noeel.jpg">
 
             <h2>Noe&euml;l</h2>
             <div>
