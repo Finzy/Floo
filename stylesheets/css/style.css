@@ -621,8 +621,11 @@ section#container .keywords {
   font-size: 2em; }
 
 .about_area p {
+  border-radius: 50px;
+  background: #EAECFF;
+  border: solid black 5px;
   width: 100%;
-  padding: 1em;
+  padding: 1.5em;
   display: inline-block;
   float: right; }
 
